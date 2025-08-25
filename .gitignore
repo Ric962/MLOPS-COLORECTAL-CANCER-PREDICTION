@@ -1,0 +1,5 @@
+logs/
+MLOPS_COLORECTAL_CANCER_PREDICTION.egg-info/
+mlruns/
+notebook/
+venv/
