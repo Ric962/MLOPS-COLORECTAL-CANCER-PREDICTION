@@ -80,6 +80,12 @@ class ModelTraining:
         self.evaluate_model()
 
 if __name__=="__main__":
+
+    os.environ["MLFLOW_TRACKING_USERNAME"] = ""
+    os.environ["MLFLOW_TRACKING_PASSWORD"] = ""
+
+    mlflow.set_tracking_uri("")
+
     with mlflow.start_run():
         trainer = ModelTraining()
         trainer.run()   
